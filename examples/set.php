@@ -13,7 +13,7 @@ try {
     $result = $telegram->setWebHook($hook_url);
 
     // Uncomment to use certificate
-    //$result = $telegram->setWebHook($hook_url, $path_certificate);
+    $result = $telegram->setWebHook($hook_url, $path_certificate);
 
     if ($result->isOk()) {
         echo $result->getDescription();
